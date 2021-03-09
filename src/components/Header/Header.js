@@ -30,11 +30,16 @@ const Header = () => {
                             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                                     <MenuIcon />
                             </IconButton>
-                                <Button type="button">
+                                {/* <Button type="button">
                                     <span style={{color:'white',fontSize:'20px'}}>
                                         <FontAwesomeIcon icon={faGlobeAmericas} />
                                     </span>
-                                </Button>
+                                </Button> */}
+                                <a href="/home">
+                                <span style={{color:'white',fontSize:'25px'}}>
+                                        <FontAwesomeIcon icon={faGlobeAmericas} />
+                                    </span>
+                                </a>
                         </Toolbar>
                     </AppBar>
                 </div>
