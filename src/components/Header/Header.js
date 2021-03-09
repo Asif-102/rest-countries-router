@@ -1,5 +1,7 @@
 import React from 'react';
 import './Header.css';
+// import {BrowserRouter as Link} from "react-router-dom";
+
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';
@@ -7,7 +9,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
@@ -30,16 +31,21 @@ const Header = () => {
                             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                                     <MenuIcon />
                             </IconButton>
-                                {/* <Button type="button">
+                                <Button type="button">
+                                    <span style={{color:'white',fontSize:'20px'}}>
+                                        <FontAwesomeIcon icon={faGlobeAmericas} />
+                                    </span>
+                                </Button>
+                                {/* <a href="/home">
+                                <span style={{color:'white',fontSize:'25px'}}>
+                                        <FontAwesomeIcon icon={faGlobeAmericas} />
+                                    </span>
+                                </a> */}
+                                {/* <Button as={Link} to={"/home"}>
                                     <span style={{color:'white',fontSize:'20px'}}>
                                         <FontAwesomeIcon icon={faGlobeAmericas} />
                                     </span>
                                 </Button> */}
-                                <a href="/home">
-                                <span style={{color:'white',fontSize:'25px'}}>
-                                        <FontAwesomeIcon icon={faGlobeAmericas} />
-                                    </span>
-                                </a>
                         </Toolbar>
                     </AppBar>
                 </div>
