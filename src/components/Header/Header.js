@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-// import {BrowserRouter as Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -31,21 +31,21 @@ const Header = () => {
                             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                                     <MenuIcon />
                             </IconButton>
-                                <Button type="button">
+                                {/* <Button type="button" component={Link} to="/home">
                                     <span style={{color:'white',fontSize:'20px'}}>
                                         <FontAwesomeIcon icon={faGlobeAmericas} />
                                     </span>
-                                </Button>
+                                </Button> */}
                                 {/* <a href="/home">
                                 <span style={{color:'white',fontSize:'25px'}}>
                                         <FontAwesomeIcon icon={faGlobeAmericas} />
                                     </span>
                                 </a> */}
-                                {/* <Button as={Link} to={"/home"}>
+                                <Button>
                                     <span style={{color:'white',fontSize:'20px'}}>
                                         <FontAwesomeIcon icon={faGlobeAmericas} />
                                     </span>
-                                </Button> */}
+                                </Button>
                         </Toolbar>
                     </AppBar>
                 </div>
